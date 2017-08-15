@@ -1,0 +1,12 @@
+
+/*check the finished task*/
+.checked {
+	text-decoration: line-through;
+}
+
+/*list of tasks format*/
+.list-group-item {
+	background-color: rgba(234, 229, 229, 0.7);
+	border-color: white;
+	border-radius: 5px;
+}

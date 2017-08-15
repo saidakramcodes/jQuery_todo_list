@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>To-Do List</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- maxcdn bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- font awesome maxcdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- my CSS -->
+    <link rel="stylesheet" href="src/lib/style.css">
+
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+
+                <div class="form-group">
+                    <div id="todolist">
+
+                    <h3 class="text-primary">Todo Список</h3>
+
+                    <nav class="navbar navbar-inverse">
+                      <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                          <li><a href="#" class="all-tasks-tab">Весь список</a></li>
+                          <li><a href="#" class="active-tasks-tab">Активные</a></li>
+                          <li><a href="#" class="finished-tasks-tab">Завершенные</a></li>
+                          <li><a href="#" class="deleted-tasks-tab">Удаленные</a></li>
+                        </ul>
+                      </div>
+                    </nav>
+
+                    <!-- empty todo list -->
+                    <div class="alert alert-warning">Todo список пуст.</div>
+
+                    <!-- list of tasks -->
+                    <div id="list" class="list-group">
+
+                    </div>
+
+
+                    <!-- show add-todo form -->
+                    <button class="btn btn-defaultl" id="pre-add"><i class="fa fa-plus"></i>Добавить</button>
+                    
+                    <!-- add-todo form -->
+                    <div class="add-todo-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Todo" id="input">
+                        </div>
+
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary" id="add">Добавить</button>
+                            <button class="btn btn-default" id="cancel">Отмена</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- todolist -->
+                
+
+
+
+            </div><!-- col-md-4 -->
+        </div><!-- row -->
+    </div><!-- container -->    
+
+    <!-- jQuery from google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap js -->   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- my jQury -->
+    <script type="text/javascript" src="src/lib/to-do.js"></script>
+</body>
+</html>
